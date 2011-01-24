@@ -1,0 +1,124 @@
+" default .vimrc installed by vim-update-bundles.
+" Avoid abbreviations!  Spelling everything out makes grepping easy.
+
+filetype off
+call pathogen#runtime_append_all_bundles()
+filetype plugin indent on
+set nocompatible
+set modelines=0
+
+" tabs
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+set encoding=utf-8
+set scrolloff=3
+set autoindent
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest
+set visualbell
+set cursorline
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+set undofile
+
+let mapleader = ","
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+" set colorcolumn=85
+nmap <leader>l :set :list!<CR>
+set listchars=tab:▸\ ,eol:¬
+
+
+nnoremap ; :
+au FocusLost * :wa
+
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR> <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
+nnoremap <leader>a :Ack
+nnoremap <leader>w <C-w>v<C-w>l
+
+inoremap jj <ESC>
+
+colorscheme blackboard
+set guioptions-=r
+set guioptions-=L
+set guioptions-=T
+
+" Invisible character colors
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+
+
+" LESS CSS
+syntax on
+au BufNewFile,BufRead *.less set filetype=less
+
+map <F4> :NERDTreeToggle<CR> " map F4 to open NERDTree
+nnoremap <F5> :GundoToggle<CR>
+
+" Remove any text (like the '#') before BUNDLE to enable a plugin.
+
+" Generally Useful:
+"  Bundle: git://github.com/scrooloose/nerdtree.git
+" # Bundle: git://github.com/vim-scripts/bufexplorer.zip.git
+" # Bundle: git://github.com/bronson/vim-closebuffer.git
+" # Bundle: git://github.com/vim-scripts/IndexedSearch.git
+" # Bundle: git://github.com/bronson/vim-trailing-whitespace.git
+" # Bundle: git://github.com/Raimondi/YAIFA.git
+" # Bundle: git://github.com/tpope/vim-vividchalk.git
+"
+" # BUNDLE: git://git.wincent.com/command-t.git
+" #   If rvm is installed, make sure we compile command-t with the system ruby
+" #   BUNDLE-COMMAND: if which rvm >/dev/null 2>&1; then rvm system exec rake make; else rake make; fi
+
+" Programming:
+" # Bundle: git://github.com/scrooloose/nerdcommenter.git
+" # Bundle: git://github.com/tpope/vim-surround.git
+" # Bundle: git://github.com/vim-scripts/taglist.vim
+" # Bundle: git://github.com/msanders/snipmate.vim.git
+" # Bundle: git://github.com/scrooloose/snipmate-snippets.git
+" # Bundle: git://github.com/vim-scripts/Align.git
+" # Bundle: git://github.com/tpope/vim-endwise.git
+" # Bundle: git://github.com/tpope/vim-repeat.git
+"  Bundle: git://github.com/tpope/vim-fugitive.git
+" # Bundle: git://github.com/ervandew/supertab.git
+" # Bundle: git://github.com/vim-scripts/jQuery.git
+" # Bundle: git://github.com/tpope/vim-git.git
+" # Bundle: git://github.com/tpope/vim-markdown.git
+" # Bundle: git://github.com/timcharper/textile.vim.git
+" # Bundle: git://github.com/kchmck/vim-coffee-script.git
+
+" Ruby/Rails Programming:
+"  Bundle: git://github.com/vim-ruby/vim-ruby.git
+" # Bundle: git://github.com/tpope/vim-rails.git
+"  Bundle: git://github.com/tpope/vim-rake.git
+" # Bundle: git://github.com/janx/vim-rubytest.git
+" # Bundle: git://github.com/tsaleh/vim-shoulda.git
+" # Bundle: git://github.com/tpope/vim-cucumber.git
+" Bundle: git://github.com/tpope/vim-haml.git
+" # Bundle: git://github.com/astashov/vim-ruby-debugger.git
+
+" # personal
+" Bundle: git://github.com/bingaman/vim-sparkup.git
+" Bundle: git://github.com/Townk/vim-autoclose.git
+" Bundle: git://github.com/kchmck/vim-coffee-script.git
