@@ -1,2 +1,0 @@
-rainbow_parenthsis-4.0.vba: call delete('/home/marco/.vim/autoload/rainbow_parenthsis.vim')|call delete('/home/marco/.vim/doc/rainbow_parenthsis.txt')|call delete('/home/marco/.vim/plugin/rainbow_parenthsis.vim')|call delete('/home/marco/.vim/rainbow_parenthsis_options.vim')
-textobj-rubyblock.vba: call delete('/home/marco/.vim/plugin/textobj/rubyblock.vim')|call delete('/home/marco/.vim/doc/textobj-rubyblock.txt')
