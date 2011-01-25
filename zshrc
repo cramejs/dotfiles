@@ -16,9 +16,11 @@ export ZSH_THEME="prose"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby gem github pip)
+plugins=(git ruby gem github pip command-coloring)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 alias python="python2.7"
+alias c="clear"
+alias gss="git status -s"
