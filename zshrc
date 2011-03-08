@@ -20,7 +20,11 @@ plugins=(git ruby gem github pip command-coloring)
 
 source $ZSH/oh-my-zsh.sh
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
 # Customize to your needs...
 alias python="python2.7"
 alias c="clear"
 alias gss="git status -s"
+alias redistart="sudo redis-server /etc/redis/redis.conf"
+
