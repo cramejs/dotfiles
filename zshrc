@@ -16,7 +16,8 @@ export ZSH_THEME="prose"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby gem github pip command-coloring)
+# command-coloring
+plugins=(git ruby gem github pip)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -26,4 +27,4 @@ source $ZSH/oh-my-zsh.sh
 alias c="clear"
 alias gss="git status -s"
 alias redistart="sudo redis-server /etc/redis/redis.conf"
-
+export TERM="xterm-256color"
